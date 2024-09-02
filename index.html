@@ -7,24 +7,17 @@
 
 </head>
 <body>
-    <h2>Registro de Usuario</h2>
-
-    <form action="/registrar" method="post">
-
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br>
-        
-        <label for="email">Correo electrónico:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        
-        <label for="password">Contraseña:</label><br>
-        <input type="password" id="password" name="password" required><br>
-        
-        <label for="confirmar_password">Confirmar contraseña:</label><br>
-        <input type="password" id="confirmar_password" name="confirmar_password" required><br><br>
-        
-        <input type="submit" value="Registrarse">
+    <h1>Registro de Usuarios</h1>
+    
+    <form id="userForm">
+        <input type="text" id="nameInput" placeholder="Nombre" required>
+        <input type="email" id="emailInput" placeholder="Correo Electrónico" required>
+        <button type="submit">Registrar Usuario</button>
     </form>
 
+    <h2>Usuarios Registrados:</h2>
+    <ul id="userList"></ul>
+
+    <script src="app.js"></script>
 </body>
 </html>
